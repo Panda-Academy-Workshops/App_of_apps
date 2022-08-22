@@ -1,0 +1,16 @@
+version: '2.4'
+
+services:
+  frontend:
+    image: "${FRONTEND_IMAGE}"
+    container_name: frontend
+    ports:
+      - 5000:5000
+    environment:
+      - BACKEND_URL=http://backend:5001/
+  
+  backend:
+    image: ${BACKEND_IMAGE}
+    container_name: backend
+    ports:
+      - 5001:5001
