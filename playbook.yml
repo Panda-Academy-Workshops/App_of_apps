@@ -20,7 +20,7 @@
     - name: Install docker-compose python package
       pip:
         name: 
-        - docker
+        - docker<7.0
         - docker-compose
     - name: Create a directory if it does not exist
       file:
