@@ -22,6 +22,7 @@
         name: 
         - docker<7.0
         - docker-compose
+        - requests==2.31.0 
     - name: Create a directory if it does not exist
       file:
         path: "{{ deployment_path }}"
